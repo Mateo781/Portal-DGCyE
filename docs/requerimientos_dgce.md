@@ -123,3 +123,18 @@ _Figura 1: Boceto de la interfaz del portal de normativas con barra de búsqueda
 - Listado de resultados con número, tipo, fecha y descripción de cada norma.
 - Panel o visor de anexos con botón de descarga (RF-05, RF-06).
 - Versión móvil y versión escritorio (RNF-02).
+
+---
+
+## 5. Entregables Actividad 19: Desarrollo de interfaz dinámica y filtrado
+
+En cumplimiento con los requisitos de la **Actividad 19**, se presentan los siguientes entregables obligatorios:
+
+1. **Código fuente del prototipo:**
+   - Estructura modular completa con separación de responsabilidades: [index.html](../index.html), [css/styles.css](../css/styles.css), [js/app.js](../js/app.js), [js/data.js](../js/data.js) y [data/normativas.json](../data/normativas.json).
+   - Implementación de filtrado funcional en memoria RAM ($O(n)$) cumpliendo con **RNF-01** (tiempo de respuesta &lt; 100 ms).
+   - Maquetación fiel al boceto institucional adaptada al 100% del ancho disponible sin barras de desplazamiento horizontal (**RNF-02**).
+
+2. **Demostración en video del funcionamiento y filtrado en tiempo real:**
+   - Demostración en vivo del filtrado instantáneo al interactuar con el buscador, selector de normas y calendario.
+   - **Enlace al video de demostración:** [https://www.youtube.com/watch?v=-_yN2NZpaVMm](https://www.youtube.com/watch?v=-_yN2NZpaVMm)

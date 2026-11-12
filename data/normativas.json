@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "nro": "651/26",
+    "tipo": "Resolución",
+    "anio": 2026,
+    "mes": "Octubre",
+    "fecha": "2026-10-15",
+    "desc": "Aprueba pliegos de bases y condiciones y autoriza llamado a Licitación Pública para equipamiento técnico en talleres de EEST de GBA.",
+    "anexos": [
+      {
+        "nombre": "Resolucion-651-26-Pliegos.pdf",
+        "formato": "pdf",
+        "tamano": "1.8 MB",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nro": "420/25",
+    "tipo": "Disposición",
+    "anio": 2025,
+    "mes": "Marzo",
+    "fecha": "2025-03-22",
+    "desc": "Actualización de planes de estudio del ciclo superior para 7mo año Técnico en Programación en escuelas secundarias técnicas.",
+    "anexos": [
+      {
+        "nombre": "Disposicion-420-25-Curricula.pdf",
+        "formato": "pdf",
+        "tamano": "2.4 MB",
+        "url": "#"
+      },
+      {
+        "nombre": "Plan-Estudio-7mo-Programacion.xlsx",
+        "formato": "xlsx",
+        "tamano": "480 KB",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nro": "128/26",
+    "tipo": "Circular",
+    "anio": 2026,
+    "mes": "Mayo",
+    "fecha": "2026-05-10",
+    "desc": "Pautas organizativas y cronograma oficial para ferias de ciencia distritales y regionales ACTE en los 135 distritos de la Provincia.",
+    "anexos": [
+      {
+        "nombre": "Circular-128-26-ACTE-Cronograma.pdf",
+        "formato": "pdf",
+        "tamano": "890 KB",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nro": "969/25",
+    "tipo": "Resolución",
+    "anio": 2025,
+    "mes": "Agosto",
+    "fecha": "2025-08-14",
+    "desc": "Marco regulatorio general para el desarrollo de prácticas profesionalizantes en tecnicaturas secundarias y superiores de la PBA.",
+    "anexos": [
+      {
+        "nombre": "Resolucion-969-25-Practicas.pdf",
+        "formato": "pdf",
+        "tamano": "3.2 MB",
+        "url": "#"
+      },
+      {
+        "nombre": "Grilla-Seguimiento-Practicas.xlsx",
+        "formato": "xlsx",
+        "tamano": "315 KB",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nro": "105/26",
+    "tipo": "Resolución",
+    "anio": 2026,
+    "mes": "Noviembre",
+    "fecha": "2026-11-04",
+    "desc": "Calendario escolar y régimen académico unificado para escuelas de educación secundaria técnica de la Región Metropolitana.",
+    "anexos": [
+      {
+        "nombre": "Resolucion-105-26-Calendario.pdf",
+        "formato": "pdf",
+        "tamano": "1.5 MB",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nro": "312/26",
+    "tipo": "Disposición",
+    "anio": 2026,
+    "mes": "Noviembre",
+    "fecha": "2026-11-08",
+    "desc": "Designación de veedores institucionales y protocolos actualizados de seguridad e higiene en talleres y laboratorios técnicos.",
+    "anexos": [
+      {
+        "nombre": "Disposicion-312-26-Seguridad.pdf",
+        "formato": "pdf",
+        "tamano": "950 KB",
+        "url": "#"
+      },
+      {
+        "nombre": "Checklist-Inspeccion-Talleres.xlsx",
+        "formato": "xlsx",
+        "tamano": "220 KB",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "nro": "074/26",
+    "tipo": "Circular",
+    "anio": 2026,
+    "mes": "Noviembre",
+    "fecha": "2026-11-12",
+    "desc": "Lineamientos pedagógicos para la continuidad formativa en entornos virtuales y acreditación de saberes técnicos.",
+    "anexos": [
+      {
+        "nombre": "Circular-074-26-Continuidad.pdf",
+        "formato": "pdf",
+        "tamano": "1.1 MB",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "nro": "518/25",
+    "tipo": "Resolución",
+    "anio": 2025,
+    "mes": "Diciembre",
+    "fecha": "2025-12-18",
+    "desc": "Homologación de títulos técnicos de nivel secundario en articulación con el Consejo Federal de Educación y el INET.",
+    "anexos": [
+      {
+        "nombre": "Resolucion-518-25-Homologacion.pdf",
+        "formato": "pdf",
+        "tamano": "2.7 MB",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "nro": "089/24",
+    "tipo": "Disposición",
+    "anio": 2024,
+    "mes": "Junio",
+    "fecha": "2024-06-15",
+    "desc": "Creación del registro provincial de proyectos de vinculación científico-tecnológica entre escuelas técnicas y PyMEs bonaerenses.",
+    "anexos": [
+      {
+        "nombre": "Disposicion-089-24-Registro-PyMEs.pdf",
+        "formato": "pdf",
+        "tamano": "1.3 MB",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "nro": "215/26",
+    "tipo": "Circular",
+    "anio": 2026,
+    "mes": "Julio",
+    "fecha": "2026-07-02",
+    "desc": "Convocatoria y bases para el certamen provincial de proyectos sociocomunitarios y robótica educativa aplicada.",
+    "anexos": [
+      {
+        "nombre": "Circular-215-26-Bases-Robótica.pdf",
+        "formato": "pdf",
+        "tamano": "740 KB",
+        "url": "#"
+      },
+      {
+        "nombre": "Formulario-Inscripcion-ACTE.xlsx",
+        "formato": "xlsx",
+        "tamano": "180 KB",
+        "url": "#"
+      }
+    ]
+  }
+]
+

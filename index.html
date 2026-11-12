@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal de Normativas y Resoluciones - DGCyE Provincia de Buenos Aires</title>
+  
+  <!-- Tipografía institucional y estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER PRINCIPAL INSTITUCIONAL (Idéntico a Boceto.png) -->
+  <header class="main-header">
+    <div class="header-container">
+      
+      <!-- LOGO OFICIAL DGCyE - GBA -->
+      <a href="#" class="brand-link" title="Portal DGCyE - Dirección General de Cultura y Educación">
+        <img src="img/logo-dgce.png" alt="Dirección General de Cultura y Educación - Gobierno de la Provincia de Buenos Aires" class="brand-logo-img" />
+      </a>
+
+      <!-- BUSCADOR CENTRAL DINÁMICO EN TIEMPO REAL -->
+      <div class="search-box-wrapper">
+        <div class="search-box">
+          <input 
+            type="text" 
+            id="buscador" 
+            placeholder="Buscar contenido" 
+            autocomplete="off" 
+            aria-label="Buscar normativas, resoluciones o planes de estudio"
+          />
+          <button type="button" id="btn-limpiar-busqueda" class="btn-clear hidden" title="Limpiar búsqueda" aria-label="Limpiar búsqueda">&times;</button>
+          <button type="button" class="search-icon-btn" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#009bb6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- INGRESO USUARIOS ABC -->
+      <div class="header-actions">
+        <a href="https://abc.gob.ar" target="_blank" rel="noopener noreferrer" class="btn-abc-img-link" title="Ingreso para usuarios abc">
+          <img src="img/btn-abc.png" alt="Ingreso para usuarios abc" class="btn-abc-img" />
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- BARRA DE FILTROS (TIPO DE DOCUMENTO Y CALENDARIO) -->
+  <section class="toolbar-section">
+    <div class="toolbar-container">
+      
+      <div class="filters-left">
+        <!-- SELECTOR DESPLEGABLE: TIPO DE DOCUMENTO -->
+        <div class="dropdown" id="dropdown-tipo">
+          <button type="button" class="btn-filter-dropdown" id="btn-tipo-toggle" aria-expanded="false" aria-haspopup="listbox">
+            <span id="label-tipo-seleccionado">Tipo de documento</span>
+            <svg class="chevron-icon" viewBox="0 0 20 20" width="16" height="16" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          </button>
+
+          <div class="dropdown-menu" id="menu-tipo" role="listbox">
+            <button type="button" class="dropdown-item active" data-tipo="todos">Todos los tipos</button>
+            <button type="button" class="dropdown-item" data-tipo="Resolución">Resolución</button>
+            <button type="button" class="dropdown-item" data-tipo="Disposición">Disposición</button>
+            <button type="button" class="dropdown-item" data-tipo="Circular">Circular</button>
+          </div>
+        </div>
+
+        <!-- BOTÓN FILTRO CALENDARIO INTERACTIVO -->
+        <div class="calendar-wrapper" id="calendar-wrapper">
+          <button type="button" class="btn-calendar-toggle" id="btn-calendar-toggle" title="Filtrar por fecha" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#009bb6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </button>
+
+          <!-- POPOVER CALENDARIO (Como en Boceto.png) -->
+          <div class="calendar-popover" id="calendar-popover">
+            <div class="popover-header">
+              <span class="popover-title">Filtrar por fecha</span>
+              <div class="date-quick-inputs">
+                <input type="number" id="cal-input-dia" placeholder="DD" min="1" max="31" class="quick-input" />
+                <input type="number" id="cal-input-mes" placeholder="MM" min="1" max="12" class="quick-input" />
+                <input type="number" id="cal-input-anio" placeholder="AAAA" min="2020" max="2030" class="quick-input" />
+              </div>
+            </div>
+
+            <!-- NAVEGACIÓN DE MES Y AÑO -->
+            <div class="calendar-nav">
+              <span class="current-month-display" id="cal-month-title">Noviembre de 2026</span>
+              <div class="calendar-nav-buttons">
+                <button type="button" id="cal-btn-prev" class="cal-nav-btn" title="Mes anterior">&#9650;</button>
+                <button type="button" id="cal-btn-next" class="cal-nav-btn" title="Mes siguiente">&#9660;</button>
+              </div>
+            </div>
+
+            <!-- ENCABEZADOS DÍAS DE LA SEMANA -->
+            <div class="calendar-days-header">
+              <span>DO</span>
+              <span>LU</span>
+              <span>MA</span>
+              <span>MI</span>
+              <span>JU</span>
+              <span>VI</span>
+              <span>SA</span>
+            </div>
+
+            <!-- GRILLA DE DÍAS -->
+            <div class="calendar-grid" id="calendar-days-grid">
+              <!-- Se genera dinámicamente desde js/app.js -->
+            </div>
+
+            <div class="calendar-footer">
+              <button type="button" class="btn-cal-clear" id="btn-limpiar-fecha">Ver todas las fechas</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- FILTROS RÁPIDOS ACTIVOS -->
+        <div class="active-chips" id="active-chips"></div>
+      </div>
+
+      <!-- INDICADOR DE RENDIMIENTO (RNF-01 < 100 ms) -->
+      <div class="performance-badge" id="performance-badge" title="Cumplimiento de RNF-01: Filtrado en memoria RAM del lado del cliente">
+        <span class="perf-icon">⚡</span>
+        <span class="perf-text">Respuesta: <strong id="metric-time">0.5 ms</strong> (<span class="perf-target">RNF-01: &lt;100 ms</span>)</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTADOR Y ESTADO DE RESULTADOS -->
+  <main class="content-container">
+    <div class="results-meta">
+      <h2 class="results-heading">
+        <span id="results-count">Cargando normativas...</span>
+      </h2>
+    </div>
+
+    <!-- GRILLA PRINCIPAL DE TARJETAS (Idéntico a Boceto.png: 4 columnas en desktop) -->
+    <section class="cards-grid" id="contenedor-resultados" aria-live="polite">
+      <!-- Se inyecta dinámicamente con JavaScript -->
+    </section>
+  </main>
+
+  <!-- MODAL / TOAST DE NOTIFICACIÓN DE DESCARGA -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- SCRIPTS MODULARES -->
+  <!-- 1. Base de datos / Fallback en RAM -->
+  <script src="js/data.js"></script>
+  <!-- 2. Lógica del Sistema (Filtrado en RAM O(n), RNF-01 y Renderizado) -->
+  <script src="js/app.js"></script>
+</body>
+</html>
+
